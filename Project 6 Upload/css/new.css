@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #D6DBDF;
+    color: #dcdcdc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app-container {
+    height: 100vh;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 5s ease;
+    background: #307473;
+    /*background: linear-gradient(0deg, rgba(238,89,40,1) 0%, rgba(255,191,54,1) 100%);*/
+}
+
+.app-container:hover {
+    animation: color-me-in 5s;
+    -webkit-animation: color-me-in 5s;
+}
+@keyframes color-me-in {
+    0% {
+        background: #2DC2BD;
+    }
+    33% {
+        background: #12664F;
+    }
+    66% {
+        background: #7A82AB;
+    }
+    100% {
+        background: #307473;
+    }
+}
+@-webkit-keyframes color-me-in {
+    0% {
+        background: #2DC2BD;
+    }
+    33% {
+        background: #12664F;
+    }
+    66% {
+        background: #7A82AB;
+    }
+    100% {
+        background: #307473;
+    }
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #dcdcdc;
+    opacity: .6;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+
+.weather-header {
+    text-align: center;
+}
+
+.weatherBG {
+    height: 100vh;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #561072;
+}
+
+.forcast {
+    width: 500px;
+    height: 300px;
+    background-color: palegoldenrod;
+}
+
+.zipcode {
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    color: #D5D8DC;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eee;
+  
+}
+
+.zipcode::-webkit-input-placeholder {
+    color:#eee;
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+.cityName {
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    color: #D5D8DC;
+    font-size: 1.5rem;
+}
+
+.cityName::-webkit-input-placeholder {
+    color:#eee;
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+#icon {
+    visibility: hidden;
+}
+
+#cDegrees {
+    margin: 16px;
+}
+
+#fDegrees {
+    margin: 16px;
+}

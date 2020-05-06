@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Indiana Weather App</title>
+</head>
+<body>
+    <div class="app-container">
+        <header class="weather-header">
+            <h1>Indiana Weather</h1>
+            <p>search either by zipcode or city name</p>
+                <input type="text" name="search1" class="zipcode" placeholder="Enter Zipcode" maxlength="5">
+                <input type="text" name="search1" class="cityName" placeholder="Enter City">
+            </header>
+                <p class="error"></p>
+                <div id="icon"><img id="wicon" src="" alt="Weather icon"></div>
+                <div class="info"></div>
+                <div class="radioButtons">
+                    Celcius<input type="radio" name="degree" id="cDegrees">
+                    Farenheit<input type="radio" name="degree" id="fDegrees">
+                </div>
+                <button type="submit" class="material-icons">search</button>
+            </div>
+    </div>
+    <script src="js/cities.js"></script>
+    <script src="js/p6.js"></script>
+</body>
+</html>
