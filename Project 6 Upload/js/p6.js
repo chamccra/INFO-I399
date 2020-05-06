@@ -151,11 +151,11 @@ function validateCity(city){
 
 
 async function getWeather() {
-    let units = 'imperical';
+    let units = 'imperial';
     let degree = 'F';
 
     if(far.checked == true){
-        units = 'imperical';
+        units = 'imperial';
         degree = 'F';
         console.log('what');
     }
@@ -165,7 +165,7 @@ async function getWeather() {
         console.log('metric');
     }
     else{
-        units = 'imperical';
+        units = 'imperial';
         degree = 'F';
     }
 
@@ -173,7 +173,7 @@ async function getWeather() {
 
     console.log('now for the weather');
 
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+zipcode.value+',us&appid=fc676f0c6032d100db307e3101c4f7fb&units='+units)
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+zipcode.value+',us&appid=eecd775ab08f0d0cd13731d6f96182d7&units='+units)
     //fetch('http://api.openweathermap.org/data/2.5/forecast?q=london&appid=fc676f0c6032d100db307e3101c4f7fb&units=metric')
     
     .then(response => response.json())
